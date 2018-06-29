@@ -15,7 +15,7 @@ var namespacesCmd = &cobra.Command{
 	Use:   "namespaces",
 	Short: "List all namespaces in your Kubernetes cluster",
 	Run: func(cmd *cobra.Command, args []string) {
-		com := exec.Command("kubectl", "get", "namespaces")
+		cmdN := exec.Command("kubectl", "get", "namespaces")
 		com.Stdout = os.Stdout
 		com.Stderr = os.Stderr
 		err := com.Run()
