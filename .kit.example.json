@@ -1,9 +1,5 @@
 {
-  "clusters": [
-    {
-      "user": "admin",
-      "password": "supersecret",
-      "host": "dko.us-east-1.k8.clusters.example.com"
-    }
-  ]
+  "user": "admin",
+  "password": "supersecret",
+  "host": "dko.us-east-1.k8.clusters.example.com"
 }
