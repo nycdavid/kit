@@ -112,4 +112,5 @@ var namespacesCmd = &cobra.Command{
 			os.Exit(1)
 		}
 	},
+	ValidArgs: []string{"foo", "bar", "baz"},
 }
