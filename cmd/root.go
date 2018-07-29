@@ -13,7 +13,6 @@ var rootCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("you ran kit")
 	},
-	BashCompletionFunction: `__foobar() { echo "FOOBAR" }`,
 }
 
 func Execute() {
