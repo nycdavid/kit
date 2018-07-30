@@ -25,6 +25,7 @@ var setCredCmd = &cobra.Command{
 			"set-context",
 			conf.Name,
 			fmt.Sprintf("--cluster=%s", conf.Host),
+			fmt.Sprintf("--user=%s", conf.Name),
 			fmt.Sprintf("--namespace=default"),
 		}
 		runKubectlCmd(kubectlArgs)
@@ -39,6 +40,7 @@ var setCredCmd = &cobra.Command{
 			fmt.Sprintf("--username=%s", conf.User),
 			fmt.Sprintf("--password=%s", conf.Password),
 		}
+		fmt.Println(kubectlArgs)
 		runKubectlCmd(kubectlArgs)
 
 		kubectlArgs = []string{
